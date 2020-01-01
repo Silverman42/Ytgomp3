@@ -9,857 +9,136 @@
   <link rel="stylesheet" href="assets/fonts/flaticon.css">
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 
-<body>
-  <!--Filter Modal-->
-  <div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title text-primary" id="exampleModalLabel">Welcome To the Club</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+<body class="bg-light">
+  <!--Navbar Starts-->
+  <div class="bg-primary">
+    <div class="col-md-10 col-12 m-auto">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Ytgomp3.com</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">YT Downloader <span class="d-none d-sm-inline">|</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mp3 Converter <span class="d-none d-sm-inline">|</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Privacy Policy</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                English
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="modal-body row justify-content-center">
-          <div class="col-10 col-md-7">
-            <form action="" method="post">
-              <div class="form-group">
-                <label for="inputname">What should we call you?</label>
-                <input type="text" class="form-control" id="inputname" placeholder="Hakeem">
-              </div>
-              <div class="form-group">
-                <label for="inputemail">What is your Email ?</label>
-                <input type="email" class="form-control" id="inputemail" placeholder="onethouasand@gmail.com">
-              </div>
-              <div class="form-group">
-                <label for="inputPassword">Password</label>
-                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-              </div>
-              <button class="btn btn-block btn-primary">
-                Sign Up
-              </button>
-            </form>
-            <p class="text-center mg-t--10 mg-b--10">
-              Been here before? <a href="#" class="loginLink" data-from="#regModal" data-to="#loginModal">Login</a>
-            </p>
-            <p class="is-size--2 text-center">Or join with </p>
-
-            <div class="row justify-content-center">
-              <div class="col-6 col-md-4"><button class="btn btn-block btn-outline-secondary">Google</button></div>
-              <div class="col-6 col-md-4"><button class="btn btn-block btn-outline-secondary">Facebook</button></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--End Login Modal-->
-
-  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title text-primary" id="exampleModalLabel">Welcome Back</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body row justify-content-center">
-          <div class="col-10 col-md-7">
-            <form action="" method="post">
-              <div class="form-group">
-                <label for="inputemail2">Username or Email</label>
-                <input type="text" class="form-control" id="inputemail2" placeholder="onethouasand@gmail.com">
-              </div>
-              <div class="form-group">
-                <label for="inputPassword2">Password</label>
-                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-              </div>
-              <button class="btn btn-block btn-primary">
-                Sign In
-              </button>
-            </form>
-            <div class="row justify-content-between">
-              <div class="col-6 mg-t--10 mg-b--10">
-                <a href="#" class=" anchor--dark">Forgotten Password ?</a>
-              </div>
-              <div class="col-6 text-left mg-t--10 mg-b--10">
-                New Here ? <a href="#" class="regLink" data-from="#loginModal" data-to="#regModal">Sign Up</a>
-              </div>
-            </div>
-            <p class="is-size--2 text-center">Or join with </p>
-
-            <div class="row justify-content-center">
-              <div class="col-5 col-md-4"><button class="btn btn-block btn-outline-secondary">Google</button></div>
-              <div class="col-5 col-md-4"><button class="btn btn-block btn-outline-secondary">Facebook</button></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="notifier">
-    <div class="left">
-      Free deliveries for orders above 20k
-    </div>
-    <div class="right">
-      24 hours return policy
-    </div>
-  </div>
-
-  <!--Container Start-->
-  <div class="container">
-    <!--Start Navbar-->
-    <header class="custom-nav d-flex flex-wrap justify-content-between align-items-center">
-      <a href="#" class="menu-btn d-lg-none" id="categoryToggle" data-tag="#categoryNavLink">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-      <a class="logo" href="">
-        <img src="assets/img/logo.png" alt="1k store logo" class="img-fluid">
-      </a>
-      <nav class="primary-navlink d-none d-lg-block" id="categoryNavLink">
-        <ul>
-          <li class="dropdown">
-            <span class="dropdown-head">
-              Jeans
-            </span>
-            <span class="dropdown-arrow">
-              <i data-feather="chevron-down" width="12" height="12"></i>
-            </span>
-            <ul class="sublink">
-              <li class="py-1"><a href="product_list.html" class="anchor--dark">Mens</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Womens</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Boys</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Girls</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <span class="dropdown-head">
-              Polos
-            </span>
-            <span class="dropdown-arrow">
-              <i data-feather="chevron-down" width="12" height="12"></i>
-            </span>
-            <ul class="sublink">
-              <li class="py-1"><a href="#" class="anchor--dark">Mens</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Womens</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Boys</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Girls</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <span class="dropdown-head">
-              Polos
-            </span>
-            <span class="dropdown-arrow">
-              <i data-feather="chevron-down" width="12" height="12"></i>
-            </span>
-            <ul class="sublink">
-              <li class="py-1"><a href="#" class="anchor--dark">Mens</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Womens</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Boys</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Girls</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <span class="dropdown-head">
-              Trouser
-            </span>
-            <span class="dropdown-arrow">
-              <i data-feather="chevron-down" width="12" height="12"></i>
-            </span>
-            <ul class="sublink">
-              <li class="py-1"><a href="#" class="anchor--dark">Mens</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Womens</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Boys</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Girls</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <span class="dropdown-head">
-              Underwear
-            </span>
-            <span class="dropdown-arrow">
-              <i data-feather="chevron-down" width="12" height="12"></i>
-            </span>
-            <ul class="sublink">
-              <li class="py-1"><a href="#" class="anchor--dark">Mens</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Womens</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Boys</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Girls</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <span class="dropdown-head">
-              Others
-            </span>
-            <span class="dropdown-arrow">
-              <i data-feather="chevron-down" width="12" height="12"></i>
-            </span>
-            <ul class="sublink">
-              <li class="py-1"><a href="#" class="anchor--dark">Mens</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Womens</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Boys</a></li>
-              <li class="py-1"><a href="#" class="anchor--dark">Girls</a></li>
-            </ul>
-          </li>
-        </ul>
       </nav>
-      <div class="form  d-sm-block">
-        <div class="input-group mb-3">
-          <input type="search" class="form-control form-control-lg bg-transparent"
-            placeholder="Try red polo, blue short...">
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary btn-lg" type="button">
-              <i data-feather="search" width="18" height="18"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <aside class="secondary-navlink">
-        <ul class="d-flex justify-content-between align-items-center">
-          <li class="link mx-2">
-            <a href="#" class="anchor--dark">
-              <i data-feather="shopping-cart" width="25" height="25"></i>
-            </a>
-          </li>
-          <li class="dropdown mx-2">
-            <a href="#" class="anchor--dark">
-              <i data-feather="user" width="25" height="25"></i>
-              <span class="dropdown-arrow">
-                <i data-feather="chevron-down" width="12" height="12"></i>
-              </span>
-            </a>
-            <ul class="sublink text-right">
-              <li class="py-1">
-                <a href="#" class="anchor--dark">Account</a>
-              </li>
-              <li class="py-1">
-                <a href="#" class="anchor--dark">Orders</a>
-              </li>
-              <li class="py-1">
-                <a href="#" class="anchor--dark">Favourites</a>
-              </li>
-              <li class="py-1">
-                <a href="#" class="anchor--dark">Track deliveries</a>
-              </li>
-              <li class="py-1 d-flex">
-                <a href="#" class="btn btn-primary mr-2" data-target="#regModal" data-toggle="modal">SignUp</a>
-                <a href="#" class="btn btn-outline-primary" data-target="#loginModal" data-toggle="modal">Login</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </aside>
-    </header>
-    <!--End Navbar-->
-
-    <!--Start Hero-->
-    <section class="pd-t--40 pd-b--40">
-      <div class="owl-carousel" id="hero-carousel" width="100%">
-        <div>
-            <img src="assets/img/carousel/1k shop banner.jpg" class="img-fluid" style="overflow: hidden; border-radius: 10px" alt="" srcset="">
-          </div>
-        <div>
-          <img src="assets/img/carousel/DSC_6850.jpg" class="img-fluid" style="overflow: hidden; border-radius: 10px" alt="" srcset="">
-        </div>
-        <div>
-          <img src="assets/img/carousel/DSC_6889.jpg" class="img-fluid" style="overflow: hidden; border-radius: 10px" alt="" srcset="">
-        </div>
-        <div>
-          <img src="assets/img/carousel/DSC_6990.jpg" class="img-fluid" style="overflow: hidden; border-radius: 10px" alt="" srcset="">
-        </div>
-        <div>
-          <img src="assets/img/carousel/DSC_7071.jpg" class="img-fluid" style="overflow: hidden; border-radius: 10px" alt="" srcset="">
-        </div>
-      </div>
-    </section>
-    <!--End Hero-->
-
-    <!--Featured products start-->
-    <section class="pd-t--40 pd-b--40">
-      <!--Scroll header start-->
-      <div class="row align-content-center justify-content-between">
-        <div class="col-7">
-          Jeans
-        </div>
-        <div class="col-3 col-md-1 d-flex justify-content-between">
-          <a href="" class="anchor--dark" id="featuredNavLeft">
-            <i data-feather="chevron-left"></i>
-          </a>
-          <a href="" class="anchor--dark" id="featuredNavRight">
-            <i data-feather="chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <hr>
-      <div class="owl-carousel" id="featured-carousel">
-        <a href="" class="d-block bg-white rounded-lg p-0 mx-1 anchor--dark">
-          <img src="assets/img/item/longsleeve.png" class="img-fluid" alt="jean_trousers">
-          <span class="d-block text-center text-capitalize p-1">
-            Blue Longsleeve
-          </span>
-          <!--Star Rating Start-->
-          <div class="d-flex justify-content-center" title="5 star rating">
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-          </div>
-          <!--Star Rating end-->
-          <!--Rating start-->
-          <div class="d-flex justify-content-center align-items-center">
-            <span href="#" class="d-inline-block m-2" title="Add to Favourite">
-              <i data-feather="heart" width="18" height="18"></i>
-            </span>
-            <span href="#" class="d-inline-block m-2" title="Add to Cart">
-              <i data-feather="shopping-cart" width="18" height="18"></i>
-            </span>
-          </div>
-          <!--Rating End-->
-        </a>
-        <a href="" class="d-block bg-white rounded-lg p-0 mx-1 anchor--dark">
-          <img src="assets/img/item/feat_2.png" class="img-fluid" alt="jean_trousers">
-          <span class="d-block text-center text-capitalize p-1">
-            Flowered Gown
-          </span>
-          <!--Star Rating Start-->
-          <div class="d-flex justify-content-center" title="5 star rating">
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-          </div>
-          <!--Star Rating end-->
-          <!--Rating start-->
-          <div class="d-flex justify-content-center align-items-center">
-            <span href="#" class="d-inline-block m-2" title="Add to Favourite">
-              <i data-feather="heart" width="18" height="18"></i>
-            </span>
-            <span href="#" class="d-inline-block m-2" title="Add to Cart">
-              <i data-feather="shopping-cart" width="18" height="18"></i>
-            </span>
-          </div>
-          <!--Rating End-->
-        </a>
-        <a href="" class="d-block bg-white rounded-lg p-0 mx-1 anchor--dark">
-          <img src="assets/img/item/feat_3.png" class="img-fluid" alt="jean_trousers">
-          <span class="d-block text-center text-capitalize p-1">
-            Off sholder top
-          </span>
-          <!--Star Rating Start-->
-          <div class="d-flex justify-content-center" title="5 star rating">
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-          </div>
-          <!--Star Rating end-->
-          <!--Rating start-->
-          <div class="d-flex justify-content-center align-items-center">
-            <span href="#" class="d-inline-block m-2" title="Add to Favourite">
-              <i data-feather="heart" width="18" height="18"></i>
-            </span>
-            <span href="#" class="d-inline-block m-2" title="Add to Cart">
-              <i data-feather="shopping-cart" width="18" height="18"></i>
-            </span>
-          </div>
-          <!--Rating End-->
-        </a>
-
-      </div>
-      <!--Scroll header end-->
-    </section>
-
-    <!--Featured products start-->
-    <section class="pd-t--40 pd-b--40">
-      <!--Scroll header start-->
-      <div class="row align-content-center justify-content-between">
-        <div class="col-7">
-          Polo
-        </div>
-        <div class="col-3 col-md-1 d-flex justify-content-between">
-          <a href="" class="anchor--dark" id="poloNavLeft">
-            <i data-feather="chevron-left"></i>
-          </a>
-          <a href="" class="anchor--dark" id="poloNavRight">
-            <i data-feather="chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <hr>
-      <div class="owl-carousel" id="polo-carousel">
-        <a href="" class="d-block bg-white rounded-lg p-0 mx-1 anchor--dark">
-          <img src="assets/img/item/longsleeve.png" class="img-fluid" alt="jean_trousers">
-          <span class="d-block text-center text-capitalize p-1">
-            Blue Longsleeve
-          </span>
-          <!--Star Rating Start-->
-          <div class="d-flex justify-content-center" title="5 star rating">
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-          </div>
-          <!--Star Rating end-->
-          <!--Rating start-->
-          <div class="d-flex justify-content-center align-items-center">
-            <span href="#" class="d-inline-block m-2" title="Add to Favourite">
-              <i data-feather="heart" width="18" height="18"></i>
-            </span>
-            <span href="#" class="d-inline-block m-2" title="Add to Cart">
-              <i data-feather="shopping-cart" width="18" height="18"></i>
-            </span>
-          </div>
-          <!--Rating End-->
-        </a>
-        <a href="" class="d-block bg-white rounded-lg p-0 mx-1 anchor--dark">
-          <img src="assets/img/item/feat_2.png" class="img-fluid" alt="jean_trousers">
-          <span class="d-block text-center text-capitalize p-1">
-            Flowered Gown
-          </span>
-          <!--Star Rating Start-->
-          <div class="d-flex justify-content-center" title="5 star rating">
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-          </div>
-          <!--Star Rating end-->
-          <!--Rating start-->
-          <div class="d-flex justify-content-center align-items-center">
-            <span href="#" class="d-inline-block m-2" title="Add to Favourite">
-              <i data-feather="heart" width="18" height="18"></i>
-            </span>
-            <span href="#" class="d-inline-block m-2" title="Add to Cart">
-              <i data-feather="shopping-cart" width="18" height="18"></i>
-            </span>
-          </div>
-          <!--Rating End-->
-        </a>
-        <a href="" class="d-block bg-white rounded-lg p-0 mx-1 anchor--dark">
-          <img src="assets/img/item/feat_3.png" class="img-fluid" alt="jean_trousers">
-          <span class="d-block text-center text-capitalize p-1">
-            Off sholder top
-          </span>
-          <!--Star Rating Start-->
-          <div class="d-flex justify-content-center" title="5 star rating">
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-          </div>
-          <!--Star Rating end-->
-          <!--Rating start-->
-          <div class="d-flex justify-content-center align-items-center">
-            <span href="#" class="d-inline-block m-2" title="Add to Favourite">
-              <i data-feather="heart" width="18" height="18"></i>
-            </span>
-            <span href="#" class="d-inline-block m-2" title="Add to Cart">
-              <i data-feather="shopping-cart" width="18" height="18"></i>
-            </span>
-          </div>
-          <!--Rating End-->
-        </a>
-
-      </div>
-      <!--Scroll header end-->
-    </section>
-    <!--Featured products start-->
-    <section class="pd-t--40 pd-b--40">
-      <!--Scroll header start-->
-      <div class="row align-content-center justify-content-between">
-        <div class="col-7">
-          T-shirt
-        </div>
-        <div class="col-3 col-md-1 d-flex justify-content-between">
-          <a href="" class="anchor--dark" id="tShirtNavLeft">
-            <i data-feather="chevron-left"></i>
-          </a>
-          <a href="" class="anchor--dark" id="tShirtNavRight">
-            <i data-feather="chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <hr>
-      <div class="owl-carousel" id="tShirt-carousel">
-        <a href="" class="d-block bg-white rounded-lg p-0 mx-1 anchor--dark">
-          <img src="assets/img/item/longsleeve.png" class="img-fluid" alt="jean_trousers">
-          <span class="d-block text-center text-capitalize p-1">
-            Blue Longsleeve
-          </span>
-          <!--Star Rating Start-->
-          <div class="d-flex justify-content-center" title="5 star rating">
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-          </div>
-          <!--Star Rating end-->
-          <!--Rating start-->
-          <div class="d-flex justify-content-center align-items-center">
-            <span href="#" class="d-inline-block m-2" title="Add to Favourite">
-              <i data-feather="heart" width="18" height="18"></i>
-            </span>
-            <span href="#" class="d-inline-block m-2" title="Add to Cart">
-              <i data-feather="shopping-cart" width="18" height="18"></i>
-            </span>
-          </div>
-          <!--Rating End-->
-        </a>
-        <a href="" class="d-block bg-white rounded-lg p-0 mx-1 anchor--dark">
-          <img src="assets/img/item/feat_2.png" class="img-fluid" alt="jean_trousers">
-          <span class="d-block text-center text-capitalize p-1">
-            Flowered Gown
-          </span>
-          <!--Star Rating Start-->
-          <div class="d-flex justify-content-center" title="5 star rating">
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-          </div>
-          <!--Star Rating end-->
-          <!--Rating start-->
-          <div class="d-flex justify-content-center align-items-center">
-            <span href="#" class="d-inline-block m-2" title="Add to Favourite">
-              <i data-feather="heart" width="18" height="18"></i>
-            </span>
-            <span href="#" class="d-inline-block m-2" title="Add to Cart">
-              <i data-feather="shopping-cart" width="18" height="18"></i>
-            </span>
-          </div>
-          <!--Rating End-->
-        </a>
-        <a href="" class="d-block bg-white rounded-lg p-0 mx-1 anchor--dark">
-          <img src="assets/img/item/feat_3.png" class="img-fluid" alt="jean_trousers">
-          <span class="d-block text-center text-capitalize p-1">
-            Off sholder top
-          </span>
-          <!--Star Rating Start-->
-          <div class="d-flex justify-content-center" title="5 star rating">
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-          </div>
-          <!--Star Rating end-->
-          <!--Rating start-->
-          <div class="d-flex justify-content-center align-items-center">
-            <span href="#" class="d-inline-block m-2" title="Add to Favourite">
-              <i data-feather="heart" width="18" height="18"></i>
-            </span>
-            <span href="#" class="d-inline-block m-2" title="Add to Cart">
-              <i data-feather="shopping-cart" width="18" height="18"></i>
-            </span>
-          </div>
-          <!--Rating End-->
-        </a>
-
-      </div>
-      <!--Scroll header end-->
-    </section>
-
-    <!--Trousers start-->
-    <section class="pd-t--40 pd-b--40">
-      <!--Scroll header start-->
-      <div class="row align-content-center justify-content-between">
-        <div class="col-7">
-          Trouser
-        </div>
-        <div class="col-3 col-md-1 d-flex justify-content-between">
-          <a href="" class="anchor--dark" id="salesNavLeft">
-            <i data-feather="chevron-left"></i>
-          </a>
-          <a href="" class="anchor--dark" id="salesNavRight">
-            <i data-feather="chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <hr>
-      <div class="owl-carousel" id="sales-carousel">
-        <a href="" class="d-block bg-white rounded-lg p-0 mx-1 anchor--dark">
-          <img src="assets/img/item/jean_trousers.png" class="img-fluid" alt="jean_trousers">
-          <span class="d-block text-center text-capitalize p-1">
-            jean trousers
-          </span>
-          <!--Star Rating Start-->
-          <div class="d-flex justify-content-center" title="5 star rating">
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-          </div>
-          <!--Star Rating end-->
-          <!--Rating start-->
-          <div class="d-flex justify-content-center align-items-center">
-            <span href="#" class="d-inline-block m-2" title="Add to Favourite">
-              <i data-feather="heart" width="18" height="18"></i>
-            </span>
-            <span href="#" class="d-inline-block m-2" title="Add to Cart">
-              <i data-feather="shopping-cart" width="18" height="18"></i>
-            </span>
-          </div>
-          <!--Rating End-->
-        </a>
-        <a href="" class="d-block bg-white rounded-lg p-0 mx-1 anchor--dark">
-          <img src="assets/img/item/sales_2.png" class="img-fluid" alt="jean_trousers">
-          <span class="d-block text-center text-capitalize p-1">
-            Green Trouser
-          </span>
-          <!--Star Rating Start-->
-          <div class="d-flex justify-content-center" title="5 star rating">
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-          </div>
-          <!--Star Rating end-->
-          <!--Rating start-->
-          <div class="d-flex justify-content-center align-items-center">
-            <span href="#" class="d-inline-block m-2" title="Add to Favourite">
-              <i data-feather="heart" width="18" height="18"></i>
-            </span>
-            <span href="#" class="d-inline-block m-2" title="Add to Cart">
-              <i data-feather="shopping-cart" width="18" height="18"></i>
-            </span>
-          </div>
-          <!--Rating End-->
-        </a>
-        <a href="" class="d-block bg-white rounded-lg p-0 mx-1 anchor--dark">
-          <img src="assets/img/item/sales_3.png" class="img-fluid" alt="jean_trousers">
-          <span class="d-block text-center text-capitalize p-1">
-            Green short
-          </span>
-          <!--Star Rating Start-->
-          <div class="d-flex justify-content-center" title="5 star rating">
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning ">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-            <span class="d-inline-block mx-1 text-warning">
-              <i data-feather="star" width="14" height="14"></i>
-            </span>
-          </div>
-          <!--Star Rating end-->
-          <!--Rating start-->
-          <div class="d-flex justify-content-center align-items-center">
-            <span href="#" class="d-inline-block m-2" title="Add to Favourite">
-              <i data-feather="heart" width="18" height="18"></i>
-            </span>
-            <span href="#" class="d-inline-block m-2" title="Add to Cart">
-              <i data-feather="shopping-cart" width="18" height="18"></i>
-            </span>
-          </div>
-          <!--Rating End-->
-        </a>
-
-      </div>
-      <!--Scroll header end-->
-    </section>
-    <!--Footer Start-->
-    <!--Footer Start-->
-    <footer class="row pd-b--30">
-      <div class="col-6 col-md-4 pd-t--30">
-        <h3 class="text-uppercase is-size--2 font-weight-bold">STORE</h3>
-        <div class="my-3 is-size--2">
-          <p>
-            Opening Time: <br>
-            Monday to Saturday <br>
-            <b>10am - 7pm</b> <br><br>
-            Sunday - <b>12pm - 7pm</b><br><br>
-            <b>Call us - </b> 07039137349
-          </p>
-
-          <address style="font-style: normal">Location - 4 oko ogbo, Airport road, <br> Benin city, Edo state.</address>
-          <a href="">Careers at 1k</a>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 pd-t--30">
-        <h3 class="text-uppercase is-size--2 font-weight-bold">LET US HELP YOU</h3>
-        <div class="my-3 is-size--2">
-          <a href="" class="anchor--dark">FAQ</a> <br><br>
-          <a href="" class="anchor--dark">Terms & conditions</a><br><br>
-          <a href="" class="anchor--dark">Customer Service</a><br><br>
-          <a href="" class="anchor--dark">Orders & Returns</a><br><br>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-
-        <div class="row">
-          <div class="col-6 col-md-12 pd-t--30">
-            <h3 class="text-uppercase is-size--2 font-weight-bold">FOLLOW US ON SOCIAL MEDIA</h3>
-            <div class="my-3 is-size--2 social social-row">
-              <ul>
-                <li>
-                  <a href="#" title="facebook" aria-details="facebook"><span class="flaticon-facebook"></span></a>
-                  <a href="#" title="instagram" aria-details="instagram"><span class="flaticon-instagram"></span></a>
-                  <a href="#" title="twitter" aria-details="twitter"><span class="flaticon-twitter"></span></a>
-                </li>
-                <li></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-6 col-md-12 pd-t--30">
-            <h3 class="text-uppercase is-size--2 font-weight-bold">CONTACT US</h3>
-            <div class="my-3 is-size--2 social social-row">
-              <ul>
-                <li>
-                  <a href="#" title="whatsapp" aria-details="whatsapp"><span class="flaticon-whatsapp"></span></a>
-                  <a href="#" title="email" aria-details="email"><span class="flaticon-email"></span></a>
-                </li>
-                <li></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--Footer End-->
-    <!--Footer End-->
+    </div>
   </div>
-  <!--Container End-->
-
-  <!--Extra footer added-->
-  <div class="bg-success text-center text-white pd--10">
-    More franchises coming soon across nigeria
+  <!--Navbar Ends-->
+  <div class="container bg-white">
+      <section class="row justify-content-center mg-b--50">
+        <div class="col-11 col-md-10">
+          <div class="pd--20 rounded-lg bg-light mg-t--10 mg-b--10"></div>
+          <h1 class="text-center text-primary font-weight-bold">Convert <span class="flaticon-youtube"></span> Videos to MP3</h1>
+          <div class="pd-t--30 pd-b--30 col-12 col-md-8 m-auto">
+              <div class="input-group mb-3">
+                  <input type="text" class="form-control form-control-lg border-primary" style="border-width: 2px" placeholder="Search and Paste your Youtube ink here" aria-label="Search and Paste your Youtube ink here" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary btn-lg" style="border-width: 1px" type="button" id="button-addon2">Convert</button>
+                  </div>
+              </div>
+              <small>By using our services, you are accepting our <a href="">terms of use</a> </small>
+          </div>
+        </div>
+      </section>
+      <section class="mg-b--50">
+          <div class="col-11 col-md-10 m-auto">
+              <div class="pd--80 rounded-lg bg-light mg-t--10 mg-b--10"></div>
+          </div>
+      </section>
+      <section class="mg-b--50">
+          <div class="col-11 col-md-10 m-auto mg-b--20 mg-t--20 text-center">
+                <span class="m-auto d-inline-block pd--10 text-white bg-primary rounded-lg">Follow Us</span> <br>
+                <div class="pd-t--10 pd-b--10 text-center">
+                  <!--Icons-->
+                  <a href="#" class="anchor--dark"> <span class="flaticon-facebook" style="font-size: 70px"></span> </a>&nbsp; &nbsp;
+                  <a href="#" class="anchor--dark"> <span class="flaticon-instagram" style="font-size: 70px"></span></a>&nbsp; &nbsp;
+                  <a href="#" class="anchor--dark"> <span class="flaticon-twitter" style="font-size: 70px"></span></a>&nbsp; &nbsp;
+                  <a href="#" class="anchor--dark"> <span class="flaticon-linkedin" style="font-size: 70px"></span></a>&nbsp; &nbsp;
+                </div>
+          </div>
+      </section>
+      <section class="mg-b--50">
+          <div class="col-11 col-md-10 m-auto mg-b--20 mg-t--20 text-center ">
+              <span class="m-auto d-inline-block pd--10 text-white bg-primary rounded-lg mg-b--30">Simple Trick to Download</span> <br><br>
+              <div class="pd-t--10 pd-b--10 col-12 col-md-8 m-auto">
+                <div class="pd--10 d-flex align-items-center" style="border: 1px solid rgb(190, 190, 190); overflow-x: auto">
+                  <div class="pd--10" style="max-width: 40px; min-width: 40px;"> <img style="width: 100%; height: auto" src="assets/img/search.svg"> </div>
+                  <div class="pd--10 text-left" > https://www.youtube<b class="text-primary">hp</b>.com/watch?v=4uY4Pz0SuaM</div>
+                </div>
+                <div class="mg-t--10 mg-b--10 text-left">
+                    <small>Simple trick to download Youtube Videos. Just add hp after the youtube</small> <br>
+                    <div class="mg-l--10">
+                        <small><b> Step 1:</b> Select the format you want and click <b>"Download"</b> button </small> <br>
+                        <small><b> Step 2:</b> In new window, press <b>"Ctrl + S"</b> to save video or right click to video, then select <br> "Save as Videos" </small>
+                    </div>
+                </div>
+              </div>
+        </div>
+      </section>
+      <section class="mg-b--50">
+          <div class="col-11 col-md-10 m-auto mg-b--20 mg-t--20 text-center ">
+              <div class="row col-12 col-md-8 m-auto justify-content-between">
+                  <div class="text-center col-5 col-5">
+                      <span class="flaticon-download text-primary" style="font-size: 60px"></span> <br>
+                      <p class="font-weight-bold">Fast Downloads</p>
+                  </div>
+                  <div class="text-center col-5 col-5">
+                      <span class="flaticon-cloud-storage-download text-primary" style="font-size: 60px"></span> <br>
+                      <p class="font-weight-bold">High Quality Audio</p>
+                  </div>
+              </div><br><br>
+              <span class="m-auto d-inline-block pd--10 text-white bg-primary rounded-lg mg-b--30">Ytgomp3.com - Free Youtube Videos Downloader</span> <br><br>
+              <div class="pd-t--10 pd-b--10 col-12 col-md-8 text-center m-auto">
+                <small> Ytgomp3 allows you to convert and download video from Youtube, Facebook, Video, Dailmotion, Youku,
+                  etc to mp3, mp4 in HD Quality. Ytgomp3 supports downloading all video formats such as MP4, M4v, 3GP, WMV, FLV
+                  MO, MP3, WEBM etc. you can easily download for free thousands of videos from Youtube and other websites
+                </small>
+              </div>
+        </div>
+      </section>
+      <section class="mg-b--50">
+          <div class="col-11 col-md-10 m-auto footer-anchor">
+              <a href="#" class=" anchor--dark"><small> About </small></a>
+              <a href="#" class=" anchor--dark"><small> Privacy Policy </small></a>
+              <a href="#" class=" anchor--dark"><small> Terms of Use </small></a>
+              <a href="#" class=" anchor--dark"><small> Contact </small></a>
+              <a href="#" class=" anchor--dark"><small> Advertise</small></a>
+              <a href="#" class=" anchor--dark"><small> FAQ</small></a>
+          </div>
+      </section>
   </div>
+  <footer class="text-center mg-t--20 mg-b--20">
+      <small> &copy; 2020 Ytgomp3.com</small>
+  </footer>
 </body>
 <script type="text/javascript" src="assets/js/feather.js"></script>
 <script>

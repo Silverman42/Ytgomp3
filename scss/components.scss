@@ -200,7 +200,7 @@
 
             @include breakpoint(md){
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
 
                 .dropdown,.link{
@@ -273,6 +273,26 @@
         }
     }
 }
+
+/*
+**Footer
+*/
+.footer-anchor{
+    display: flex;
+    @include breakpoint(xs){
+        flex-direction: column
+    }
+    @include breakpoint(md){
+        justify-content: center;
+        flex-direction: row
+    }
+    a{
+        display: block;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
+
 
 /*
 ** Custom switch
